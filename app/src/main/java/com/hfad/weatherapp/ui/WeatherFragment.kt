@@ -15,7 +15,6 @@ class WeatherFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         binding = FragmentWeatherBinding.inflate(inflater, container, false)
         return binding.root
     }

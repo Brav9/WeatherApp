@@ -6,11 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.WeatherFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <androidx.cardview.widget.CardView
-
-        android:id="@+id/cardView"
+        android:id="@+id/cvWeatherOfToday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -27,214 +24,214 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tv_city"
+                android:id="@+id/tvCityTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="City"
                 android:textSize="64sp"
-                app:layout_constraintEnd_toStartOf="@+id/imageView6"
-                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintEnd_toStartOf="@+id/ivUpdateDate"
+                app:layout_constraintStart_toEndOf="@+id/ivChooseACityIcon"
                 app:layout_constraintTop_toTopOf="parent"
                 app:textAllCaps="false" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/tvMorning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Утром"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toStartOf="@+id/textView8"
+                app:layout_constraintEnd_toStartOf="@+id/tvDaytime"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionOfTheWeather"
                 app:textAllCaps="false" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/tvMorningTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="+6"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView2"
-                app:layout_constraintStart_toStartOf="@+id/imageView2"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                app:layout_constraintEnd_toEndOf="@+id/ivMorningWeatherIcon"
+                app:layout_constraintStart_toStartOf="@+id/ivMorningWeatherIcon"
+                app:layout_constraintTop_toBottomOf="@+id/ivMorningWeatherIcon" />
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/ivChooseACityIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:src="@drawable/ic_add"
-                app:layout_constraintBottom_toBottomOf="@+id/tv_city"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCityTitle"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tv_city" />
+                app:layout_constraintTop_toTopOf="@+id/tvCityTitle" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/ivEveningWeatherIcon"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/ic_cloudy"
-                app:layout_constraintEnd_toEndOf="@+id/textView9"
-                app:layout_constraintStart_toStartOf="@+id/textView9"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                app:layout_constraintEnd_toEndOf="@+id/tvEvening"
+                app:layout_constraintStart_toStartOf="@+id/tvEvening"
+                app:layout_constraintTop_toBottomOf="@+id/tvEvening" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/ivUpdateDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/ic_sync"
-                app:layout_constraintBottom_toBottomOf="@+id/tv_city"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCityTitle"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tv_city" />
+                app:layout_constraintTop_toTopOf="@+id/tvCityTitle" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/tvEveningtemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="+8"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView5"
-                app:layout_constraintStart_toStartOf="@+id/imageView5"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                app:layout_constraintEnd_toEndOf="@+id/ivEveningWeatherIcon"
+                app:layout_constraintStart_toStartOf="@+id/ivEveningWeatherIcon"
+                app:layout_constraintTop_toBottomOf="@+id/ivEveningWeatherIcon" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/tvDaytimeTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="+12"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView3"
-                app:layout_constraintStart_toStartOf="@+id/imageView3"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+                app:layout_constraintEnd_toEndOf="@+id/ivDaytimeWeatherIcon"
+                app:layout_constraintStart_toStartOf="@+id/ivDaytimeWeatherIcon"
+                app:layout_constraintTop_toBottomOf="@+id/ivDaytimeWeatherIcon" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/tvNightTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="+4"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView4"
-                app:layout_constraintStart_toStartOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+                app:layout_constraintEnd_toEndOf="@+id/ivNightWeatherIcon"
+                app:layout_constraintStart_toStartOf="@+id/ivNightWeatherIcon"
+                app:layout_constraintTop_toBottomOf="@+id/ivNightWeatherIcon" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/tvNight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Ночью"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView9"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                app:layout_constraintStart_toEndOf="@+id/tvEvening"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionOfTheWeather" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/ivDaytimeWeatherIcon"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/ic_cloudy"
-                app:layout_constraintEnd_toEndOf="@+id/textView8"
-                app:layout_constraintStart_toStartOf="@+id/textView8"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintEnd_toEndOf="@+id/tvDaytime"
+                app:layout_constraintStart_toStartOf="@+id/tvDaytime"
+                app:layout_constraintTop_toBottomOf="@+id/tvDaytime" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/ivNightWeatherIcon"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/ic_moon"
-                app:layout_constraintEnd_toEndOf="@+id/textView10"
-                app:layout_constraintStart_toStartOf="@+id/textView10"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintEnd_toEndOf="@+id/tvNight"
+                app:layout_constraintStart_toStartOf="@+id/tvNight"
+                app:layout_constraintTop_toBottomOf="@+id/tvNight" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/tvDaytime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Днем"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toStartOf="@+id/textView9"
-                app:layout_constraintStart_toEndOf="@+id/textView7"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                app:layout_constraintEnd_toStartOf="@+id/tvEvening"
+                app:layout_constraintStart_toEndOf="@+id/tvMorning"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionOfTheWeather" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/ivMorningWeatherIcon"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/ic_sun"
-                app:layout_constraintEnd_toEndOf="@+id/textView7"
-                app:layout_constraintStart_toStartOf="@+id/textView7"
-                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                app:layout_constraintEnd_toEndOf="@+id/tvMorning"
+                app:layout_constraintStart_toStartOf="@+id/tvMorning"
+                app:layout_constraintTop_toBottomOf="@+id/tvMorning" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/tvEvening"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Вечером"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toStartOf="@+id/textView10"
-                app:layout_constraintStart_toEndOf="@+id/textView8"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                app:layout_constraintEnd_toStartOf="@+id/tvNight"
+                app:layout_constraintStart_toEndOf="@+id/tvDaytime"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionOfTheWeather" />
 
             <TextView
-                android:id="@+id/tv_temperature"
+                android:id="@+id/tvTemperatureTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+12"
                 android:textSize="48sp"
-                app:layout_constraintEnd_toStartOf="@+id/imageView"
-                app:layout_constraintStart_toStartOf="@+id/tv_city"
-                app:layout_constraintTop_toBottomOf="@+id/tv_city" />
+                app:layout_constraintEnd_toStartOf="@+id/ivWeatherIcon"
+                app:layout_constraintStart_toStartOf="@+id/tvCityTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvCityTitle" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/ivWeatherIcon"
                 android:layout_width="80dp"
                 android:layout_height="80dp
 "
                 android:layout_marginStart="8dp"
                 android:src="@drawable/ic_sun"
-                app:layout_constraintBottom_toBottomOf="@+id/tv_temperature"
-                app:layout_constraintEnd_toEndOf="@+id/tv_city"
-                app:layout_constraintStart_toEndOf="@+id/tv_temperature"
-                app:layout_constraintTop_toTopOf="@+id/tv_temperature" />
+                app:layout_constraintBottom_toBottomOf="@+id/tvTemperatureTitle"
+                app:layout_constraintEnd_toEndOf="@+id/tvCityTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvTemperatureTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvTemperatureTitle" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/tvDescriptionOfTheWeather"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Пасмурно"
                 android:textSize="32sp"
-                app:layout_constraintEnd_toEndOf="@+id/tv_city"
-                app:layout_constraintStart_toStartOf="@+id/tv_city"
-                app:layout_constraintTop_toBottomOf="@+id/tv_temperature" />
+                app:layout_constraintEnd_toEndOf="@+id/tvCityTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvCityTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvTemperatureTitle" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvSevenDayForecast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Прогноз на 7 дней"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintStart_toStartOf="@+id/cvWeatherOfToday"
+        app:layout_constraintTop_toBottomOf="@+id/cvWeatherOfToday" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/cvWeatherFirstDay"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
@@ -243,14 +240,14 @@
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        app:layout_constraintTop_toBottomOf="@+id/tvSevenDayForecast">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/tvDateFirstDay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -263,18 +260,18 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/tvFirstDaytimeTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:text="+9"
                 android:textSize="24sp"
-                app:layout_constraintEnd_toStartOf="@+id/textView16"
+                app:layout_constraintEnd_toStartOf="@+id/tvFirstNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/tvFirstNightTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -285,30 +282,30 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/ivWeatherFirstDayIcon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="120dp"
                 android:src="@drawable/ic_cloudy"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/textView16"
+                app:layout_constraintEnd_toEndOf="@+id/tvFirstNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/ivWeatherDayIcon"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_sun"
-        app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toTopOf="@+id/textView5" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvSevenDayForecast"
+        app:layout_constraintEnd_toStartOf="@+id/ivWeatherNightIcon"
+        app:layout_constraintTop_toTopOf="@+id/tvSevenDayForecast" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
+        android:id="@+id/cvWeatherSecondDay"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
@@ -317,14 +314,14 @@
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+        app:layout_constraintTop_toBottomOf="@+id/cvWeatherFirstDay">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/tvDateSecondDay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -337,28 +334,28 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView11"
+                android:id="@+id/ivWeatherSecondDayIcon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="120dp"
                 android:src="@drawable/ic_sun"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="@+id/tvSecondNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/tvSecondDaytimeTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:text="+12"
                 android:textSize="24sp"
-                app:layout_constraintEnd_toStartOf="@+id/textView19"
+                app:layout_constraintEnd_toStartOf="@+id/tvSecondNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/tvSecondNightTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -371,16 +368,16 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/ivWeatherNightIcon"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/ic_moon"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-        app:layout_constraintEnd_toEndOf="@+id/cardView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+        app:layout_constraintBottom_toBottomOf="@+id/ivWeatherDayIcon"
+        app:layout_constraintEnd_toEndOf="@+id/cvWeatherFirstDay"
+        app:layout_constraintTop_toTopOf="@+id/ivWeatherDayIcon" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
+        android:id="@+id/cvWeatherThirdDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -389,14 +386,14 @@
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+        app:layout_constraintTop_toBottomOf="@+id/cvWeatherSecondDay">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tvDateThirdDay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -409,28 +406,28 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView14"
+                android:id="@+id/ivWeatherThirdDayIcon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="120dp"
                 android:src="@drawable/ic_cloudy_sunny"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/textView20"
+                app:layout_constraintEnd_toEndOf="@+id/tvThirdNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/tvThirdDaytimeTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:text="+10"
                 android:textSize="24sp"
-                app:layout_constraintEnd_toStartOf="@+id/textView20"
+                app:layout_constraintEnd_toStartOf="@+id/tvThirdNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/tvThirdNightTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -443,7 +440,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView5"
+        android:id="@+id/cvWeatherFourthDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -452,14 +449,14 @@
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+        app:layout_constraintTop_toBottomOf="@+id/cvWeatherThirdDay">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView21"
+                android:id="@+id/tvDateFourthDay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -472,28 +469,28 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView15"
+                android:id="@+id/ivWeatherFourthDayIcon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="120dp"
                 android:src="@drawable/ic_light_rain"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/textView23"
+                app:layout_constraintEnd_toEndOf="@+id/tvFourthNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView22"
+                android:id="@+id/tvFourthDaytimeTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:text="+8"
                 android:textSize="24sp"
-                app:layout_constraintEnd_toStartOf="@+id/textView23"
+                app:layout_constraintEnd_toStartOf="@+id/tvFourthNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView23"
+                android:id="@+id/tvFourthNightTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -506,7 +503,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView6"
+        android:id="@+id/cvWeatherFifthDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -515,14 +512,14 @@
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView5">
+        app:layout_constraintTop_toBottomOf="@+id/cvWeatherFourthDay">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView24"
+                android:id="@+id/tvDateFifthDay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -535,28 +532,28 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView16"
+                android:id="@+id/ivWeatherFifthDayIcon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="120dp"
                 android:src="@drawable/ic_heavy_rain"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/textView26"
+                app:layout_constraintEnd_toEndOf="@+id/tvFifthNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView25"
+                android:id="@+id/tvFifthDaytimeTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:text="+8"
                 android:textSize="24sp"
-                app:layout_constraintEnd_toStartOf="@+id/textView26"
+                app:layout_constraintEnd_toStartOf="@+id/tvFifthNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView26"
+                android:id="@+id/tvFifthNightTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -569,7 +566,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView7"
+        android:id="@+id/cvWeatherSixthDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -578,14 +575,14 @@
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView6">
+        app:layout_constraintTop_toBottomOf="@+id/cvWeatherFifthDay">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView27"
+                android:id="@+id/tvDateSixthDay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -598,28 +595,28 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView17"
+                android:id="@+id/ivWeatherSixthDayIcon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="120dp"
                 android:src="@drawable/ic_cloudy"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/textView29"
+                app:layout_constraintEnd_toEndOf="@+id/tvSixthNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView28"
+                android:id="@+id/tvSixthDaytimeTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:text="+9"
                 android:textSize="24sp"
-                app:layout_constraintEnd_toStartOf="@+id/textView29"
+                app:layout_constraintEnd_toStartOf="@+id/tvSixthNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView29"
+                android:id="@+id/tvSixthNightTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -632,6 +629,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cvWeatherSeventhDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -640,14 +638,14 @@
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView7">
+        app:layout_constraintTop_toBottomOf="@+id/cvWeatherSixthDay">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView30"
+                android:id="@+id/tvDateSeventhDay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -660,28 +658,28 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView18"
+                android:id="@+id/ivWeatherSeventhDayIcon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="120dp"
                 android:src="@drawable/ic_sun"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/textView32"
+                app:layout_constraintEnd_toEndOf="@+id/tvSeventhNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView31"
+                android:id="@+id/tvSeventhDaytimeTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:text="+12"
                 android:textSize="24sp"
-                app:layout_constraintEnd_toStartOf="@+id/textView32"
+                app:layout_constraintEnd_toStartOf="@+id/tvSeventhNightTemperature"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView32"
+                android:id="@+id/tvSeventhNightTemperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
